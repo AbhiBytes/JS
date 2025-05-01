@@ -37,3 +37,34 @@ const myFunction = function(){
 
 }
 console.log(typeof bigNumber);
+
+
+//+++++++++++++++++++++++++++++++++
+
+//Stack (Primitive) : whenever the stack memory is used you'll get the copy of declared value not the actual value 
+// Heap (Non-Primitive) : you'll get the reference of declared value(if u change anything in the reference , the original value will change)
+
+// 
+
+let myNickname = "Abhi"
+
+let myFullname = myNickname
+myFullname = "Abhimanyu"
+
+console.log(myFullname);
+console.log(myNickname);
+
+let user1 = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+let user2 = user1
+
+user2.email = "Abhi@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
+
+
+
